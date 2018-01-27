@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+/* 1- positionning the 2 divs */
+form {
+	display: flex;
+}
+form > div {
+	width: 50%;
+}
+form > div + div {
+	margin-left: 1em;
+}
+
+
+
+body {
+	max-width: 1000px;
+	margin: auto;
+	padding: 1em;
+	background:rgba(0,0,0,.1);
+	color: #333;
+	font-size: 1.4em;
+	font-family: georgia, "trebuchet ms", arial, serif;
+}
+
+h1 {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	color: #345;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+nav {
+  max-width: 960px;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7);
+}
+
+
+
+form > div {
+	padding: 1em;
+	background: #fff;
+	border: 1px solid gray;
+	border-radius: 4px;
+},
+label {
+	width: 5em;
+	margin-right: .5em;
+	text-align: right;
+},
+
+div:first-child p:first-child {
+	justify-content: flex-end;
+}
+
+div > p:first-child {margin-top: 0;}
+div > p:last-child {margin-bottom: 0;}
+small {
+	font-size: 0.8rem;
+	color: #aaa;
+}
+
+/* small screens */
+@media (max-width: 600px) {
+	form {
+		flex-direction: column;
+	}
+	form p {
+		display: block;
+	}
+	label {
+		display: block;
+		width: auto;
+		text-align: left;
+	}
+	form > div {
+		width: auto;
+	}
+	form > div + div {
+		margin-left: 0;
+		margin-bottom: 1em;
+		order: -1;
+	}
+
+}

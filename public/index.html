@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CSS/HTML Workshop with Convargo</title>
+    <title> Convargo</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet"  href="homepage.css">
     <link rel="icon" href="image/camion.ico" />
+    <link rel="stylesheet" href="index.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1>
-           CONVARGO
-    </h1>
-  <nav>
+    <h1> Simulation </h1>
+    <nav>
     <ul>
      <li>
        <a href="homepage.html">Home</a>
@@ -21,29 +19,57 @@
        <a href="about.html">About</a>
      </li>
      <li>
-       <a href="index.html">Services</a>
+       <a href="index.html">Simulation</a>
      </li>
-
-
-    </ul>
+   </ul>
   </nav>
 
-
-    <div class="container">
+   <div class="container">
     <div class="row">
-      <div class="col-sm-4" >
-      <div class="col-*-*"> <input class="name" type="text" placeholder="Trucker name"/> </div>
-      <div class="col-*-*"> <input class="price-by-km" type="number" placeholder="Price by km"/> </div>
-      <div class="col-*-*"><input class="price-by-cubic" type="number" placeholder="Price by m3"/> </div>
+      <div class="col-sm-4" id="trucker">
+      <div class="col-*-*">
+        <p align=center>
+        <label> Trucker name: </label>
+        <input class="name" type="text" placeholder="Trucker name"/>
+       </p>
+      </div>
+      <div class="col-*-*">
+        <p align=center>
+          <label> Price by Km:  </label>
+         <input class="price-by-km" type="number" placeholder="Price by km"/>
+       </p>
+      </div>
+      <div class="col-*-*">
+        <p align=center>
+
+          <label> Price by m3: </label>
+      <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
+     </div>
       </div>
 
 
 
-      <div class="col-sm-4" >
-      <div class="col-*-*"> <input class="name" type="text" placeholder="Shipper name"/></div>
-      <div class="col-*-*"> <input class="distance" type="number" placeholder="Distance in km"/></div>
-      <div class="col-*-*"> <input class="volume" type="number" placeholder="Volume in m3"/></div>
-      <div class="col-*-*"> <input class="option" type="checkbox" placeholder="Deductible option"/> </div>
+      <div class="col-sm-4" id="shipper" >
+      <div class="col-*-*">
+        <p align=center>
+          <label> Shipper name: </label>
+         <input class="name" type="text" placeholder="Shipper name"/>
+       </div>
+      <div class="col-*-*">
+        <p align=center>
+          <label> Distance by Km: </label>
+         <input class="distance" type="number" placeholder="Distance in km"/>
+       </div>
+      <div class="col-*-*">
+        <p align=center>
+          <label> Volume in m3: </label>
+         <input class="volume" type="number" placeholder="Volume in m3"/>
+       </div>
+      <div class="col-*-*">
+        <p align=center>
+          <label> Deductible option:  </label>
+         <input class="option" type="checkbox" placeholder="Deductible option"/>
+        </div>
       </div>
 
 </div>
